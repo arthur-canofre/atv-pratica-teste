@@ -15,10 +15,6 @@ function getUser(id){
     return users[id]
 }
 
-function ativos(){
-    var actives = 0
-    users.filter((element) => element.active? actives++: null)
-    return actives
-}
 
-module.exports = { addUser, getUser, ativos }
+
+module.exports = { addUser, getUser, users }
